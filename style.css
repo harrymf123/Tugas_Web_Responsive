@@ -1,0 +1,2081 @@
+/* Mengatur ukuran semua elemen */
+*{
+    box-sizing: border-box;
+}
+
+/* Mengatur jenis huruf pada tag body */
+html,body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengatur navbar */
+.fly{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #4d4d4d;
+    margin: 0;
+    padding: 3px;
+    height: 75px;
+}
+#navcontainer{
+    position: relative; /*Mudah dibentuk*/
+    width: 100%;
+    height: 60px;
+    background-color: #2f3036;
+    padding-top: 0;
+}
+#menus{
+    text-align: center;
+    position: absolute;
+}
+#navcontainer ul {
+    float: left;
+    list-style-type:none;
+    margin: 3px;
+    padding:3px;
+    position: absolute;
+    left: 25%;
+}
+@media screen and (max-width: 700px){
+    #navcontainer ul {
+        float: left;
+        list-style-type:none;
+        margin: 0;
+        padding:0px;
+        position: absolute;
+        left: 20%;
+    } 
+}
+@media screen and (max-width: 1000px){
+    #navcontainer ul {
+        list-style-type:none;
+        margin: 0;
+        padding:0px;
+        position: absolute;
+        left: 15%;
+    } 
+}
+#navcontainer li {
+    display:inline-block;
+    float: left;
+    text-transform:uppercase;
+} 
+#navcontainer li a {
+    padding:15px 25px;
+    min-width:100px;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+} 
+#navcontainer li:hover a {
+    background: rgb(0, 140, 254);
+} 
+#navcontainer li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+} 
+#navcontainer li:hover ul a:hover {
+    background: rgb(0, 131, 254);
+    color: #fff;
+} 
+#navcontainer li ul {
+    display: none;
+} 
+#navcontainer li ul li {
+    display: block;
+    float: none;
+} 
+#navcontainer li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+    text-align:left;
+} 
+#navcontainer ul li a:hover .hidden, .hidden:hover {
+    display: block;
+} 
+.show-menu {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(16, 167, 154);
+    text-align: left;
+    padding: 11.5px 5px;
+    display: none; 
+}
+#navcontainer input[type=checkbox]{
+    display: none;
+} 
+#navcontainer input[type=checkbox]:checked ~ #menus {
+    display: block;
+}
+#navcontainer .fa-2 {
+    font-size: 2em;
+} 
+#navcontainer .fa-2 {
+    margin-right: 0.07142857em; 
+    margin-left: 0.6em; 
+} 
+/*Akhir Menu*/ 
+
+/* Responsive */
+@media screen and (max-width:1280px){ 
+    body,#navcontainer,div.span-14,div.span-24{
+        width:100%!important;min-width:100%!important;
+    } 
+} 
+@media screen and (max-width:1080px){ 
+    #navcontainer li a {
+        min-width:80px;
+    } 
+} 
+@media screen and (max-width:808px){
+    #navcontainer ul {
+        position: static;
+        display: none;
+    } 
+    #navcontainer li {
+        border-bottom: 1px solid #4d4d4d;
+    } 
+    #navcontainer ul li, #navcontainer li a {
+        width: 100%;
+    } #navcontainer li a{
+        display:block;
+        height:auto;
+        line-height:normal;
+    } 
+    #navcontainer li a {
+        text-align:left;
+    } .show-menu {
+        display:block!important;
+        line-height:30px;
+    } 
+    .show-menu:hover {
+        cursor:pointer;
+    } 
+    label {
+        margin:0!important;
+    } 
+}
+/* Akhir Responsive */
+
+/* HOME */
+.home{
+    position: relative;
+    float: left;
+    text-align: center;
+    background-image: url(Alun-Alun.jpg) ;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.gul{
+    padding: 0;
+    margin-top: 100px;
+    position: relative;
+    top: 10%;
+}
+.gelap{
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    background: rgb(31, 27, 27);
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+}
+.home h1{
+    position: relative;
+    color: #fff;
+    margin-top: 50px;
+}
+.home h4{
+    position: relative;
+    color: #fff;
+}
+
+/* About */
+.about{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(rgb(115, 164, 184) 250px, aqua 200px);
+}
+.isi{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    top: 50px;
+    float: left;
+}
+.h1{
+    border-right: 5px solid yellow;
+    margin: 15px;
+    padding-right: 15px;
+    text-transform: uppercase; 
+    color:#fff; 
+    text-align: right; 
+    font-size: 55px;  
+}
+.ini{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: -10%;
+    top: 60px;
+}
+.h2{
+    margin: 0;
+    padding-right: 10px;
+    text-transform: uppercase; 
+    text-align: left; 
+    color: rgb(62, 62, 221); 
+    font-size: 30px; 
+}
+.gambar{
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    top: 110px;
+    text-align: center;
+}
+.gus{
+    border: 5px solid rgb(209, 50, 50);
+    border-radius: 5px;
+    width: 600px;
+    cursor: pointer;
+}
+.melayani{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    background-color: #e74747;
+    width: 350px;
+    padding: 2px;
+    float: left;
+    height: 250px;
+    border: 10px solid blueviolet;
+    border-radius: 5px;
+    margin: auto;
+    position: absolute;
+    top: 300px; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+/* Location */
+.location{
+    position: relative;
+    display: block;
+    float: left;
+    text-align: center;
+    background-image: url(Kab_Gresik.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.peteng{
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    background: rgb(31, 27, 27);
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+}
+.layanan{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.box2{
+    background-color: #479ae7;
+    width: 415px;
+    padding: 2px;
+    float: left;
+    height: 475px;
+    border: 10px solid rgb(55, 43, 226);
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    top: 480px; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+/* Makanan */
+.food{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 900px;
+    background-image: url(Pecel_Rawon.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.ketok{
+    width: 100%;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    background: rgb(31, 27, 27);
+    opacity: 0.4;
+    text-align: center;
+    position: absolute;
+}
+.makanan{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.box3{
+    background-color: #e74747;
+    width: 24%;
+    margin: 6px;
+    padding: 2px;
+    float: left;
+    height: 520px;
+    border: 10px solid blueviolet;
+    border-radius: 5px;
+}
+.iki{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    top: 50px;
+    float: left;
+}
+.hi{
+    border-right: 5px solid yellow;
+    margin: 15px;
+    padding-right: 15px;
+    text-transform: uppercase; 
+    color:#fff; 
+    text-align: right; 
+    font-size: 55px;  
+}
+.iti{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: -10%;
+    top: 60px;
+}
+.hu{
+    margin: 0;
+    padding-right: 10px;
+    text-transform: uppercase; 
+    text-align: left; 
+    color: rgb(175, 231, 177); 
+    font-size: 30px; 
+}
+.kr{
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 15px double #479ae7;
+    margin-bottom: 15px;
+    padding: 0;
+    top: 10px;
+    cursor: pointer;
+}
+.pi{
+    border: 5px solid #421fc0;
+    background: aquamarine;
+    border-radius: 5px;
+    width:300px;
+    margin: auto;
+}
+.pu{
+    border: 5px solid #960b0b;
+    background: rgb(67, 123, 187);
+    border-radius: 5px;
+    width:300px;
+    margin: auto;
+}
+.pe{
+    border: 5px solid #4d5208;
+    background: rgb(184, 207, 80);
+    border-radius: 5px;
+    width:300px;
+    margin: auto;
+}
+.po{
+    border: 5px solid #58230e;
+    background: rgb(109, 238, 77);
+    border-radius: 5px;
+    width:300px;
+    margin: auto;
+}
+.anu{
+    text-transform: uppercase; 
+    color: bisque; 
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Budaya */
+.culture{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 1500px;
+    background: linear-gradient(rgb(63, 145, 165) 200px,rgb(50, 205, 71)  500px);
+    background-attachment: fixed;
+}
+.jelas{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+.tradisi{
+    top: 80px;
+    left: 50px;
+    position: relative;
+    width: 350px;
+    height: 265px;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10%;
+    border: 10px solid rgb(179, 11, 11);
+    cursor: pointer;
+}
+.hudwa{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 90px;
+    left: 430px;
+    text-transform: uppercase;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
+}
+.waduh{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 135px;
+    left: 430px;
+    background-color: #5c5ff7;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 16px;
+}
+.tradis{
+    top: 100px;
+    left: 50px;
+    position: relative;
+    width: 350px;
+    height: 210px;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10%;
+    border: 10px solid rgb(38, 7, 109);
+    cursor: pointer;
+}
+.hudw{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 110px;
+    left: 430px;
+    text-transform: uppercase;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
+}
+.wadu{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 155px;
+    left: 430px;
+    background-color: #5c5ff7;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 16px;
+}
+.tradi{
+    top: 120px;
+    left: 50px;
+    position: relative;
+    width: 350px;
+    height: 360px;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10%;
+    border: 10px solid rgb(184, 209, 38);
+    cursor: pointer;
+}
+.hud{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 130px;
+    left: 430px;
+    text-transform: uppercase;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
+}
+.wad{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 175px;
+    left: 430px;
+    background-color: #5c5ff7;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 16px;
+}
+.trad{
+    top: 120px;
+    left: 50px;
+    position: relative;
+    width: 350px;
+    height: 230px;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10%;
+    border: 10px solid rgb(226, 81, 14);
+    cursor: pointer;
+}
+.hul{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 130px;
+    left: 430px;
+    text-transform: uppercase;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
+}
+.wa{
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 175px;
+    left: 430px;
+    background-color: #5c5ff7;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 16px;
+}
+.hii{
+    border-right: 5px solid rgb(0, 153, 255);
+    margin: 15px;
+    padding-right: 15px;
+    text-transform: uppercase; 
+    color:rgb(207, 205, 41); 
+    text-align: right; 
+    font-size: 55px;  
+}
+.huu{
+    margin: 0;
+    padding-right: 10px;
+    text-transform: uppercase; 
+    text-align: left; 
+    color: rgb(235, 33, 60); 
+    font-size: 30px; 
+}
+
+/* Wisata */
+.tourism{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1200px;
+    background-image: url(Beach.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hes{
+    top: 160px;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+.seh{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border: 10px solid #479ae7;
+    border-radius: 5%;
+}
+.delegan{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 800px;
+    left: 25%;
+    right: 25%;
+    background-color: #17da48;
+    border: 5px solid brown;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer{
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    background: linear-gradient(white 320px,grey 80px);
+}
+.semacam{
+    border: 5px solid #0a9c58;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px; 
+    text-align: center;
+    position: relative;
+    width: 200px;
+}
+.semaca{
+    border: 5px solid #d34807;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px; 
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 192px;
+}
+.semac{
+    border: 5px solid #b81921;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px; 
+    text-align: center;
+    position: relative;
+    width: 416px;
+    height: 192px;
+}
+.persembahan{
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.her{
+    text-align: center;
+    color: #2f3036;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.his{
+    position: relative;
+    top: 50px;
+    bottom: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width: 1350px){
+    .food{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 1400px;
+        background-image: url(Pecel_Rawon.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .ketok{
+        width: 100%;
+        height: 1400px;
+        margin: 0;
+        padding: 0;
+        background: rgb(31, 27, 27);
+        opacity: 0.4;
+        text-align: center;
+        position: absolute;
+    }
+    .box3{
+        background-color: #0a9c58;
+        width: 50%;
+        margin: auto;
+        padding: 2px;
+        height: 530px;
+        border: 10px solid rgb(43, 198, 226);
+        border-radius: 5px;
+    }
+    .kr{
+        position: relative;
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        border: 15px double #479ae7;
+        margin-bottom: 15px;
+        padding: 0;
+        top: 10px;
+    }
+    .pi{
+        border: 5px solid #421fc0;
+        background: aquamarine;
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .pu{
+        border: 5px solid #960b0b;
+        background: rgb(224, 156, 78);
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .pe{
+        border: 5px solid #4d5208;
+        background: rgb(184, 207, 80);
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .po{
+        border: 5px solid #58230e;
+        background: rgb(109, 238, 77);
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .anu{
+        text-transform: uppercase; 
+        color: bisque; 
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1200px){
+    .culture{
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 3000px;
+        background: linear-gradient(rgb(63, 145, 165) 200px,rgb(50, 205, 71)  500px);
+        background-attachment: fixed;
+    }
+    .jelas{
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .tradisi{
+        position: relative;
+        float: left;
+        width: 50%;
+        margin: auto;
+        top: 150px;
+        left: 25%;
+        right: 25%;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(179, 11, 11);
+        cursor: pointer;
+    }
+    .hudwa{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100px;
+        right: 25%;
+        left: 25%;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .waduh{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 430px;
+        left: 25%;
+        right: 25%;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tradis{
+        top: 540px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 260px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(38, 7, 109);
+        cursor: pointer;
+    }
+    .hudw{
+        width: 50%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 490px;
+        left: 25%;
+        right: 25%;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wadu{
+        width: 50%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 815px;
+        left: 25%;
+        right: 25%;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tradi{
+        top: 880px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 260px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(184, 209, 38);
+        cursor: pointer;
+    }
+    .hud{
+        width: 50%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 830px;
+        left: 25%;
+        right: 25%;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wad{
+        width: 50%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 1160px;
+        left: 25%;
+        right: 25%;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .trad{
+        top: 1400px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 230px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(226, 81, 14);
+        cursor: pointer;
+    }
+    .hul{
+        width: 50%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 1350px;
+        left: 25%;
+        right: 25%;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wa{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 1650px;
+        left: 25%;
+        right: 25%;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tourism{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 1200px;
+        background-image: url(Beach.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .seh{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        border: 10px solid #479ae7;
+        border-radius: 5%;
+    }
+    .delegan{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 800px;
+        left: 0;
+        right: 0;
+        background-color: #17da48;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .footer{
+        position: relative;
+        float: left;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 600px;
+        background: linear-gradient(white 520px,grey 80px);
+    }
+}
+@media screen and (max-width: 750px){
+    .about{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 900px;
+        background: linear-gradient(rgb(115, 164, 184) 400px, aqua 200px);
+    }
+    .isi{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        top: 50px;
+        float: left;
+    }
+    .h1{
+        border-left: 5px solid yellow;
+        border-right: 5px solid yellow;
+        border-top: 5px solid yellow;
+        border-bottom: 5px solid yellow;
+        margin: 15px;
+        padding: 0;
+        text-transform: uppercase; 
+        color:#fff; 
+        text-align: center; 
+        font-size: 55px;  
+    }
+    .h2{
+        width: 50%;
+        position: relative;
+        left: 25%;
+        right: 25%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase; 
+        text-align: center; 
+        color: rgb(62, 62, 221); 
+        font-size: 30px;
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff; 
+    }
+    .gus{
+        border: 5px solid rgb(209, 50, 50);
+        border-radius: 5px;
+        width: 430px;
+        cursor: pointer;
+    }
+    .box1{
+        background-color: #e74747;
+        width: 350px;
+        padding: 2px;
+        float: left;
+        height: 280px;
+        border: 10px solid blueviolet;
+        border-radius: 5px;
+        margin: auto;
+        position: absolute;
+        top: 300px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+    }
+    .location{
+        position: relative;
+        display: block;
+        float: left;
+        text-align: center;
+        background-image: url(Kab_Gresik.jpg) ;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 940px;
+    }
+    .peteng{
+        width: 100%;
+        height: 940px;
+        margin: 0;
+        padding: 0;
+        background: rgb(31, 27, 27);
+        opacity: 0.5;
+        text-align: center;
+        position: absolute;
+    }
+    .food{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 2550px;
+        background-image: url(Pecel_Rawon.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .ketok{
+        width: 100%;
+        height: 2550px;
+        margin: 0;
+        padding: 0;
+        background: rgb(31, 27, 27);
+        opacity: 0.4;
+        text-align: center;
+        position: absolute;
+    }
+    .makanan{
+        position: relative;
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .box3{
+        background-color: #477ae7;
+        width: 100%;
+        margin: auto;
+        padding: 2px;
+        height: 530px;
+        border: 10px solid rgb(226, 116, 43);
+        border-radius: 5px;
+    }
+    .iki{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        top: 50px;
+        float: left;
+    }
+    .hi{
+        border: 5px solid yellow;
+        margin: 15px;
+        padding-right: 15px;
+        text-transform: uppercase; 
+        color:#fff; 
+        text-align: center; 
+        font-size: 40px;  
+    }
+    .hu{
+        text-transform: uppercase; 
+        color: rgb(175, 231, 177); 
+        width: 50%;
+        position: relative;
+        left: 25%;
+        right: 25%;
+        float: left;
+        margin: 0;
+        padding: 0; 
+        text-align: center; 
+        font-size: 25px;
+        border: 5px solid rgb(173, 28, 28); 
+    }
+    .kr{
+        position: relative;
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        border: 15px double #479ae7;
+        margin-bottom: 15px;
+        padding: 0;
+        top: 10px;
+    }
+    .pi{
+        border: 5px solid #421fc0;
+        background: aquamarine;
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .pu{
+        border: 5px solid #960b0b;
+        background: rgb(224, 156, 78);
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .pe{
+        border: 5px solid #4d5208;
+        background: rgb(184, 207, 80);
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .po{
+        border: 5px solid #58230e;
+        background: rgb(109, 238, 77);
+        border-radius: 5px;
+        width:290px;
+        margin: auto;
+    }
+    .anu{
+        text-transform: uppercase; 
+        color: bisque; 
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .hii{
+        border: 5px solid rgb(0, 153, 255);
+        margin: 15px;
+        padding-right: 15px;
+        text-transform: uppercase; 
+        color:rgb(207, 205, 41); 
+        text-align: center; 
+        font-size: 40px;  
+    }
+    .huu{
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        margin: 0;
+        position: relative;
+        float: left;
+        padding: 0;
+        text-transform: uppercase; 
+        text-align: center; 
+        color: rgb(235, 33, 60); 
+        font-size:25px;
+        border: 5px solid darkolivegreen; 
+    }
+    .culture{
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 3000px;
+        background: linear-gradient(rgb(63, 145, 165) 200px,rgb(50, 205, 71)  500px);
+        background-attachment: fixed;
+    }
+    .jelas{
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .tradisi{
+        position: relative;
+        float: left;
+        width: 50%;
+        margin: auto;
+        top: 150px;
+        left: 25%;
+        right: 25%;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(179, 11, 11);
+        cursor: pointer;
+    }
+    .hudwa{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        left: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .waduh{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 430px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tradis{
+        top: 540px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 260px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(38, 7, 109);
+        cursor: pointer;
+    }
+    .hudw{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 490px;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wadu{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 815px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tradi{
+        top: 880px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 260px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(184, 209, 38);
+        cursor: pointer;
+    }
+    .hud{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 830px;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wad{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 1160px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .trad{
+        top: 1400px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 230px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(226, 81, 14);
+        cursor: pointer;
+    }
+    .hul{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 1350px;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wa{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 1650px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tourism{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 1100px;
+        background-image: url(Beach.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .seh{
+        position: relative;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        margin: auto;
+        text-align: center;
+        border: 10px solid #479ae7;
+        border-radius: 5%;
+    }
+    .delegan{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 700px;
+        left: 0;
+        right: 0;
+        background-color: #17da48;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .footer{
+        position: relative;
+        float: left;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 600px;
+        background: linear-gradient(white 520px,grey 80px);
+    }
+}
+@media screen and (max-width: 450px){
+    .about{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 900px;
+        background: linear-gradient(rgb(115, 164, 184) 400px, aqua 200px);
+    }
+    .isi{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        top: 50px;
+        float: left;
+    }
+    .h1{
+        border-left: 5px solid yellow;
+        border-right: 5px solid yellow;
+        border-top: 5px solid yellow;
+        border-bottom: 5px solid yellow;
+        margin: 15px;
+        padding: 0;
+        text-transform: uppercase; 
+        color:#fff; 
+        text-align: center; 
+        font-size: 43px;  
+    }
+    .h2{
+        width: 75%;
+        position: relative;
+        left: 13%;
+        right: 15%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase; 
+        text-align: center; 
+        color: rgb(62, 62, 221); 
+        font-size: 25px;
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff; 
+    }
+    .gambar{
+        position: relative;
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        top: 150px;
+        text-align: center;
+    }
+    .gus{
+        border: 5px solid rgb(209, 50, 50);
+        border-radius: 5px;
+        width: 360px;
+        cursor: pointer;
+    }
+    .melayani{
+        position: relative;
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .box1{
+        background-color: #e74747;
+        width: 330px;
+        padding: 2px;
+        float: left;
+        height: 290px;
+        border: 10px solid blueviolet;
+        border-radius: 5px;
+        margin: auto;
+        position: absolute;
+        top: 430px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+    }
+    .layanan{
+        position: relative;
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .box2{
+        background-color: #479ae7;
+        width: 300px;
+        padding: 2px;
+        float: left;
+        height: 670px;
+        border: 10px solid rgb(55, 43, 226);
+        border-radius: 5px;
+        margin: auto;
+        padding: 5px;
+        position: absolute;
+        top: 630px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+    }
+    .location{
+        position: relative;
+        display: block;
+        float: left;
+        text-align: center;
+        background-image: url(Kab_Gresik.jpg) ;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 1030px;
+    }
+    .peteng{
+        width: 100%;
+        height: 1030px;
+        margin: 0;
+        padding: 0;
+        background: rgb(31, 27, 27);
+        opacity: 0.5;
+        text-align: center;
+        position: absolute;
+    }
+    .tourism{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 1100px;
+        background-image: url(Beach.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .seh{
+        position: relative;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        border: 10px solid #479ae7;
+        border-radius: 5%;
+    }
+    .delegan{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 700px;
+        left: 0;
+        right: 0;
+        background-color: #17da48;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .footer{
+        position: relative;
+        float: left;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 800px;
+        background: linear-gradient(white 720px,grey 80px);
+    }
+    .semacam{
+        border: 5px solid #0a9c58;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px; 
+        text-align: center;
+        position: relative;
+        width: 200px;
+    }
+    .semaca{
+        border: 5px solid #d34807;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px; 
+        text-align: center;
+        position: relative;
+        width: 200px;
+        height: 192px;
+    }
+    .semac{
+        border: 5px solid #b81921;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px; 
+        text-align: center;
+        position: relative;
+        width: 300px;
+    }
+    .his{
+        position: relative;
+        top: 50px;
+        bottom: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 375px){
+    .about{
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 900px;
+        background: linear-gradient(rgb(115, 164, 184) 400px, aqua 200px);
+    }
+    .isi{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        top: 50px;
+        float: left;
+    }
+    .h1{
+        border-left: 5px solid yellow;
+        border-right: 5px solid yellow;
+        border-top: 5px solid yellow;
+        border-bottom: 5px solid yellow;
+        margin: 15px;
+        padding: 0;
+        text-transform: uppercase; 
+        color:#fff; 
+        text-align: center; 
+        font-size: 43px;  
+    }
+    .h2{
+        width: 75%;
+        position: relative;
+        left: 13%;
+        right: 15%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase; 
+        text-align: center; 
+        color: rgb(62, 62, 221); 
+        font-size: 25px;
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff; 
+    }
+    .gambar{
+        position: relative;
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        top: 150px;
+        text-align: center;
+    }
+    .gus{
+        border: 5px solid rgb(209, 50, 50);
+        border-radius: 5px;
+        width: 300px;
+        cursor: pointer;
+    }
+    .melayani{
+        position: relative;
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .box1{
+        background-color: #e74747;
+        width: 300px;
+        padding: 2px;
+        float: left;
+        height: 280px;
+        border: 10px solid blueviolet;
+        border-radius: 5px;
+        margin: auto;
+        position: absolute;
+        top: 400px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+    }
+    .layanan{
+        position: relative;
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .box2{
+        background-color: #479ae7;
+        width: 300px;
+        padding: 2px;
+        float: left;
+        height: 670px;
+        border: 10px solid rgb(55, 43, 226);
+        border-radius: 5px;
+        margin: auto;
+        padding: 5px;
+        position: absolute;
+        top: 630px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+    }
+    .location{
+        position: relative;
+        display: block;
+        float: left;
+        text-align: center;
+        background-image: url(Kab_Gresik.jpg) ;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 1030px;
+    }
+    .peteng{
+        width: 100%;
+        height: 1030px;
+        margin: 0;
+        padding: 0;
+        background: rgb(31, 27, 27);
+        opacity: 0.5;
+        text-align: center;
+        position: absolute;
+    }
+    .tradisi{
+        position: relative;
+        float: left;
+        width: 50%;
+        margin: auto;
+        top: 150px;
+        left: 25%;
+        right: 25%;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(179, 11, 11);
+        cursor: pointer;
+    }
+    .hudwa{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        left: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .waduh{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 430px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tradis{
+        top: 560px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 260px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(38, 7, 109);
+        cursor: pointer;
+    }
+    .hudw{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 510px;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wadu{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 835px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .tradi{
+        top: 880px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 260px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(184, 209, 38);
+        cursor: pointer;
+    }
+    .hud{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 830px;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wad{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 1160px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .trad{
+        top: 1440px;
+        left: 25%;
+        right: 25%;
+        position: relative;
+        width: 50%;
+        height: 230px;
+        margin: auto;
+        padding: 0;
+        border-radius: 10%;
+        border: 10px solid rgb(226, 81, 14);
+        cursor: pointer;
+    }
+    .hul{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 1390px;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 25px;
+        font-style: bold;
+    }
+    .wa{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 1690px;
+        left: 0;
+        right: 0;
+        background-color: #5c5ff7;
+        border: 5px solid brown;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .footer{
+        position: relative;
+        float: left;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 800px;
+        background: linear-gradient(white 720px,grey 80px);
+    }
+    .semacam{
+        border: 5px solid #0a9c58;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px; 
+        text-align: center;
+        position: relative;
+        width: 200px;
+    }
+    .semaca{
+        border: 5px solid #d34807;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px; 
+        text-align: center;
+        position: relative;
+        width: 200px;
+        height: 192px;
+    }
+    .semac{
+        border: 5px solid #b81921;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px; 
+        text-align: center;
+        position: relative;
+        width: 300px;
+    }
+    .his{
+        position: relative;
+        top: 50px;
+        bottom: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+    }
+}
